@@ -1,19 +1,13 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+require 'connexion.php';
 
-echo '<html>
-    <head>
-        <title>Nounou.com</title>
-    </head>
-    <body>
-        <div class="infos">
-        Notre site permet d\'établir un contact entre les nounous et les parents. 
-        </div>
-    </body>
-    </html>
-        ';
+global $conn;
+$sql = "SELECT type_user from utilisateur";
+$type_user = $conn->query($sql);
+//if type user = 0
+//if ($type_user != 1) {
+     header('Location: ../Admin/admin.php');
+    
+//}
+
