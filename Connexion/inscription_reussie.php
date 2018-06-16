@@ -12,7 +12,7 @@ $dataSourceName = 'mysql:host=localhost;dbname=mydb';
 
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
-$login = $_POST['login'];
+$email = $_POST['email'];
 $mdp = $_POST['mdp'];
 
 
@@ -21,7 +21,7 @@ try {
     $base = new PDO ($dataSourceName, $user, $password);
     
   
-$requete1 = "insert into utilisateur (nom, prenom,login, mdp) values ('$nom','$prenom','$login', '$mdp')";
+$requete1 = "insert into utilisateur (email, mdp) values ('$email', '$mdp')";
 $base->exec($requete1);
 
 
@@ -34,7 +34,7 @@ echo '<div class="container">
 			<div class="row main">
 				<div class="main-login main-center">
                                 Inscription réussie <br>
-    Bienvenue ' .$prenom.' 
+    Bienvenue ' .$email.' 
  <br>       
 
 <a href="page_de_connexion.html">Cliquez ici pour revenir à la page de connexion </a>

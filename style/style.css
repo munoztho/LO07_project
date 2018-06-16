@@ -1,0 +1,52 @@
+#nounoufinder{
+  margin-left: 560px;
+font-size: 70;}
+
+#description{
+  margin-left: 255px;
+}
+ .Bouton{
+   padding-left: 85%
+ }
+
+#blablacar{
+  margin-left: 233px;
+
+}
+
+.administration {
+
+background-color: #E8F8F5 ;
+}
+
+.categorieadmin {
+
+  text-align: center;
+}
+
+.categorie{
+  color: #154360;
+  font-size: 30px;
+
+}
+.listefonction {
+font-size: 20px;
+text-decoration: underline;
+}
+
+.nombreInscrits{
+  color: #CB4335  ;
+}
+
+#table{
+ width:100%;
+ _width:700px;
+ _padding-right:100%;
+ min-width : 700px;
+  height:15px;
+ border-spacing: 0px;
+}
+
+.fc-view-container {
+  background-color: white;
+}

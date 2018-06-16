@@ -6,21 +6,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Nounou Formulaire</title>
+  <title>Parents Formulaire</title>
 </head>
 <body>
-  <div id="error" class="modal">
-    <div class="modal-content center">
-      <h4 class="red-text">ERREUR</h4>
-      <p>Le formulaire est incorrect</p>
-      <a class="modal-close waves-effect waves-green btn">OK</a>
-    </div>
-  </div>
+  
   <div class="container">
-    <h1 class="center"> Formulaire d'incription : Nounou</h1>
-    </br>
-    </br>
-    <form class="col s12" enctype="multipart/form-data" method="post" action="../Nounou/NounouInsert.php">
+    <h1 class="center"> Formulaire d'incription : Parents </h1>
+  </br>
+</br>
+    <form class="col s12" enctype="multipart/form-data" method="post" action="../Formulaire/enfant_form.php">
       <div class="row">
         <div class="input-field col s6">
           <input id="email" type="email" class="validate" name="email">
@@ -58,8 +52,8 @@
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <input id="age" type="number" class="validate" name ="age">
-          <label for="age">Age</label>
+          <input id="age" type="number" class="validate" name ="nbenfants">
+          <label for="age">Nombre d'enfants à garder</label>
         </div>
         <div class="input-field col s6">
           <input id="ville" type="text" class="validate" name ="ville">
@@ -67,33 +61,10 @@
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s6">
-          <select multiple name ="langues[]" class="select">
-            <option value="" disabled selected>Choix des langues</option>
-            <option value="1">Anglais</option>
-            <option value="2">Espagnol</option>
-            <option value="3">Allemand</option>
-            <option value="4">Portugais</option>
-            <option value="5">Russe</option>
-            <option value="6">Chinois</option>
-          </select>
-          <label>Langues parlées</label>
-        </div>
-        <div class="input-field col s6">
-          <select name = "experience" class="select">
-            <option value="" disabled selected>Expérience</option>
-            <option value="debutant">Débutant.e</option>
-            <option value="occasionnel">Occasionnel.le</option>
-            <option value="experimente">Expérimenté.e</option>
-          </select>
-          <label>Niveau d'expérience</label>
-        </div>
-      </div>
-
-      <div class="row">
         <div class="input-field col s12">
-        <textarea name="presentation" placeholder="Présentez vous..." class="materialize-textarea" data-length="1200"></textarea>
-          <label for="presentation">Présentation</label>
+          <textarea name="presentation" placeholder="Présentez vous..." class="materialize-textarea" data-length="1200">
+        </textarea>
+          <label for="Infos générales">Informations générales</label>
         </div>
       </div>
       <div class="row">
@@ -103,6 +74,8 @@
           </button>
         </div>
       </div>
+
+
     </form>
   </div>
   <br/>      <br/>
